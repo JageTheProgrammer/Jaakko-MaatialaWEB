@@ -1,0 +1,68 @@
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+
+    background: #202020;
+    transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
+}
+
+.navbar-section {
+    min-width: 1200px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.logo a {
+    margin-right: 600px;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px #1d1d1d;
+    line-height: 1.7;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.3rem;
+    text-decoration: none;
+    text-align: center;
+    transition: color ease-in-out .3s;
+
+}
+
+.logo a:hover {
+    color: rgba(24, 193, 199, 0.678);
+}
+
+.menu-items li {
+    list-style-type: disc;
+    list-style: inside;
+    line-height: 1.6;
+    display: contents;
+    text-align: left;
+}
+
+.menu-items li a {
+    width: clamp(200px, 50%, 400px);
+    padding: clamp (1rem, 1vw, 1rem);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    -webkit-text-stroke: 1px #1d1d1d;
+    color: #ffffff;
+    font-style: italic;
+    margin-right: 10px;
+    font-size: clamp(1rem, 1.3vw, 2rem);
+    background-size: 20%;
+    border-radius: 15px;
+    background-origin: border-box;
+    transition: color ease-in-out 0.3s;
+}
+
+.menu-items li a:hover {
+    color: rgba(24, 193, 199, 0.678);
+    text-decoration: none;
+}
+
+.navbar-container.scrolled {
+    background: rgba(32, 32, 32, 0.1);
+    backdrop-filter: blur(10px);
+}
