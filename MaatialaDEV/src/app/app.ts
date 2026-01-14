@@ -7,8 +7,8 @@ import { Home } from './components/home';
   imports: [Navigationbar, Home],
   template: `
   <Navbar></Navbar>
-  <homepage-root></homepage-root>
   `,
+  templateUrl: '../components/home/home.html',
   styleUrl: './app.css'
 })
 export class App {
