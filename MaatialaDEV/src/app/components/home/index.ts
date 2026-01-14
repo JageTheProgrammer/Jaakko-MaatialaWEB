@@ -5,11 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: 'index.html',
   styleUrls: ['home.css']
 })
-export class Home {
-
-  scrollTo(sectionId: string) {
-    const element = document.getElementById(sectionId);
-    element?.scrollIntoView({ behavior: 'smooth' });
-  }
-
-}
+export function Home() {} 
