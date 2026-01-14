@@ -1,0 +1,9 @@
+.about-page {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    justify-content: center;
+    text-align: center;
+    padding: clamp(1rem, 7vw, 3rem);
+    color: #fff;
+}
